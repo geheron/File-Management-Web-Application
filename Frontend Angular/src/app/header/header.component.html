@@ -1,0 +1,29 @@
+<div class="navbar" *ngIf="!loggedIn">
+    <div class="navbar-logo">
+      <i class="fa-solid fa-hippo"></i>
+      <a routerLink="">FILE MANAGER</a>
+    </div>
+
+    <div class="navbar-options">
+      <a routerLink="">Home</a>
+      <a routerLink="register">Register</a>
+      <a routerLink="login">Login</a>
+    </div>
+</div>
+
+<div class="navbar" *ngIf="loggedIn">
+  <div class="navbar-logo">
+    <i class="fa-solid fa-hippo"></i>
+    <a routerLink="file-list">FILE MANAGER</a>
+  </div>
+
+  <div class="navbar-options">
+    <a routerLink="file-list">Home</a>
+    <a (click)="profile()">Profile</a>
+    <a (click)="logout()">Logout</a>
+  </div>
+</div>
+
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>

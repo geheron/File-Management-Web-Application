@@ -1,0 +1,49 @@
+.navbar{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navbar-logo{   
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.navbar-logo a{
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-options{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+
+.navbar-options a{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-account{
+    width: 150px;
+    color: white;
+}
+
+.navbar-account a{
+    margin-right: 10px;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}

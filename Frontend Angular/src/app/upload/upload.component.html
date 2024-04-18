@@ -1,0 +1,32 @@
+<div class="welcom">
+  <h1>Welcome {{user}}</h1>
+</div>
+
+<div class="logout">
+  <button (click)="logout()">Logout</button>
+  <button (click)="profile()">Profile</button>
+</div>
+
+<div class="api post">
+  <div class="req">
+    <h1>Upload File</h1>
+
+  </div>
+
+  <div class="data">
+    <h2>Data</h2>
+    <label for="filename">File name</label>
+    <input type="text" name="filename" [(ngModel)]="name">
+    <br><br>
+    <label for="file">Choose your file</label>
+    <input type="file" (change)="onFileSelected($event)" name="file">
+    <br><br>
+    <button (click)="uploadFile()">Upload</button>
+  </div>
+
+  <div class="res">
+    <h2>Result</h2>
+    <textarea maxlength="1000" class="Result" id="postResult" placeholder="Your result.."
+      [(ngModel)]="textAreaValue"></textarea>
+  </div>
+</div>

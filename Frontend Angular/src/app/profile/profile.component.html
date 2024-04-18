@@ -1,0 +1,10 @@
+<div class="profile-details" *ngIf="dataReceived">
+    <h2>User Profile</h2>
+  <ul>
+    <li><b>Username:</b> {{ user.username }}</li>
+    <li><b>Full Name:</b> {{ user.firstName }} {{ user.lastName }}</li>
+    <li><b>Role:</b> {{ user.role }}</li>
+    <li><b>Address:</b> {{ user.address }}</li>
+    <li><b>Phone Number:</b> {{ user.phoneNumber }}</li>
+  </ul>
+</div>

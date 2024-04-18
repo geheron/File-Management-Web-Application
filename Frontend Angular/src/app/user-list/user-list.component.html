@@ -1,0 +1,30 @@
+<h2>All Users</h2>
+<div class="allusers" id="userList">
+        <div class="user">
+            <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Delete User</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of users">
+                    <td>{{ user.userId }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.firstName }}</td>
+                    <td>{{ user.lastName }}</td>
+                    <td>{{ user.address }}</td>
+                    <td>{{ user.phoneNumber }}</td>
+                    <td><app-user-delete [userId]="user.userId" (deleteUserEvent)="getUsers()"></app-user-delete></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <br><br>
+</div>

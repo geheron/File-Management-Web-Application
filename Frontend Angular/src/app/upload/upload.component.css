@@ -1,0 +1,53 @@
+.req{
+    color: black;
+    margin-top: 20px;
+    height: 50px;
+    
+}
+
+.Result{
+    background-color: rgb(252, 250, 246);
+}
+
+h1, h2{
+    color: black;
+}
+
+input{
+    color: black;
+    width: 500px;
+    margin-left: 20px;
+}
+
+button{
+    color: black;
+    margin-left: 20px;
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+    color: black;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+
+.data{
+    color: black;
+    margin-top: 0px;
+    height: 150px;
+}
+
+.api{
+    border: 5px solid black;
+    margin-top: 10px;
+}
+
+.post{
+    background-color: antiquewhite;
+}
+
+label{
+    color: black;
+    margin-left: 15px;
+}

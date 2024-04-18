@@ -1,0 +1,28 @@
+<app-upload-file (uploadEvent)="reloadFetch()"></app-upload-file>
+<br>
+<h2>List of Files</h2>
+<div class="allfiles" id="fileList" *ngIf="dataReceived">
+        <div class="file">
+            <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Delete</th>
+                    <th>Download</th>
+                    <th *ngIf="admin">Uploaded By</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let fileUser of fileUsers" >
+                    <td>{{ fileUser.fileObject.id }}</td>
+                    <td>{{ fileUser.fileObject.name }}</td>
+                    <td><app-delete [fileId]="fileUser.fileObject.id" (deleteEvent)="reloadFetch()"></app-delete></td>
+                    <td><app-download [fileId]="fileUser.fileObject.id" [filename]="fileUser.fileObject.name"></app-download></td>
+                    <td *ngIf="admin"><app-id-profile [userId]="fileUser.fileObject.doneById" [uploadedBy]="fileUser.userObject.username"></app-id-profile></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <br><br>
+</div>
