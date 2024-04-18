@@ -20,13 +20,13 @@ Main features:
 --> Logout is handled properly
 
 
-Backend
+Backend:
 --> Visual Studio
 --> SQL server
 --> SQL server management studio
 --> Please change the connection string for database in the appsettings.json file according to yours
 
-Frontend
+Frontend:
 --> Visual Studio Code
 --> run using this command: ng serve -o
 
